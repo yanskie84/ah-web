@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GUI</title>
+    <link rel="icon" href="{% static "prokom.png"%}">
+    <link rel="stylesheet" href="{% static "modul2.css"%}">
+</head>
+<header>
+    <a href="/">home</a>
+</header>
+<br><br>
+<body>
+    <div class="container">
+        <h1>GUI & PySide2</h1>
+
+        <h2>Pengertian GUI</h2>
+        <p>Graphical User Interface (GUI) atau antarmuka pengguna grafis merupakan
+          suatu bentuk antarmuka pengguna yang memungkinkan pengguna berinteraksi dengan
+          peranti elektronik melalui objek-objek grafis, seperti ikon, penunjuk mouse, tombol,
+          dan menu. GUI lebih memudahkan pengguna dalam melaksanakan suatu tindakan karena cukup 
+          mengandalkan mouse dan mengarahkan penunjuk mouse ke objek-objek grafis. Melalui GUI, 
+          navigasi ke seluruh desktop dapat dilakukan dengan mudah</p>
+
+        <h2>Pengertian PySide2</h2>
+        <p>PySide2 adalah modul resmi dari Qt untuk Python Project, yang menyediakan akses 
+          ke Qt framework yang lengkap. PySide2 menduplikasi sintaksis dan fungsionalitas PyQt5 
+          dengan sangat sedikit perbedaan. PySide diatur oleh lisensi LGPL yang berarti bahwa kode 
+          sumber hanya perlu dirilis ketika kode sumber untuk PySide2 telah diubah </p>
+
+        <h2>Kelebihan PySide2</h2>
+        <ul>
+            <li>Pustaka mudah dipelajari meskipun sangat luas.</li>
+            <li>Basis kode tidak terlalu rumit atau panjang.</li>
+            <li>Aplikasi grafisnya lengkap.</li>
+            <li>Lisensi lebih fleksibel.</li>
+            <li>Kompatibel dengan Qt Designer.</li>
+        </ul>
+
+        <h2>Kekurangan PySide2</h2>
+        <ul>
+            <li>Belum ada integrasi web yang mudah.</li>
+            <li>Komunitas lebih kecil disbanding PyQt.</li>
+            <li>Dokumentasi Python kurang lengkap.</li>
+            <li>Ukuran file output yang cenderung besar.</li>
+        </ul>
+
+        <h2>QtCharts</h2>
+        <p>QtCharts adalah modul yang menyediakan serangkaian komponen bagan yang mudah digunakan. QtCharts digunakan untuk memvisualisasikan data 2D dengan komponen yang mencakup berbagai opsi visualisasi 2D seperti line charts,  
+bar charts, pie charts, scatter charts, area charts, dan banyak lagi. Masing-masing jenis charts ini dilengkapi dengan berbagai opsi penyesuaian, yang memungkinkan
+untuk melakukan penyesuaian tampilan agar sesuai dengan kebutuhan. Tujuan dari QtCharts adalah untuk menyajikan data dengan cara yang lebih intuitif dan mudah digunakan
+</p>
+
+        <h2>Contoh Script</h2>
+        <pre>
+from PySide2.QtWidgets import QApplication, QLabel
+
+app = QApplication([])
+label = QLabel("Halo, ini GUI PySide2!")
+label.show()
+app.exec_()
+        </pre>
+    </div>
+
+<footer class="footer">
+  <h1 class="footer-title">PROKOM 2025</h1>
+  <div class="footer-content">
+    <div class="footer-column">
+      <p><em>(Halaman)</em></p>
+      <p><a href="/">Home</a></p>
+      <p><a href="#expert">Hasil</a></p>
+      <p><a href="#kontak">Profil</a></p>
+      <p><a href="#saran">Saran</a></p>
+    </div>
+    <div class="footer-column">
+      <p><em>(Aktivitas)</em></p>
+      <p><a href="#praktikum">Praktikum</a></p>
+      <p><a href="#praktikum">Modul</a></p>
+    </div>
+    <div class="footer-column">
+      <p><em>(Halaman Utilitas)</em></p>
+      <p><a href="#404">404</a></p>
+    </div>
+    <div class="footer-column">
+      <p><em>(Sosial)</em></p>
+      <p><a href="https://instagram.com" target="_blank">Instagram</a></p>
+      <p><a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
+      <p><a href="https://youtube.com" target="_blank">YouTube</a></p>
+      <p><a href="/">Website</a></p>
+    </div>
+  </div>
+  <p style="text-align:center; margin-top: 30px;"><a href="/">Kembali ke home</a></p>
+</footer>
+</body>
+</html>

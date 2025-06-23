@@ -1,0 +1,193 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kelompok 15</title>
+    <link rel="icon" href="{% static "prokom.png"%}">
+    <link rel="stylesheet" href="{% static "home.css"%}">
+</head>
+<body>
+    <header>
+       <div class="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#praktikum">Praktikum</a></li>
+                <li><a href="#expert">Hasil</a></li>
+                <li><a href="#kontak">Profil</a></li>
+                <li><a href="#saran">Saran</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="anggota" id="home">
+        <div class="anggota-left">
+        <div class="slider-auto">
+            <div class="slide-track">
+                <div class="slide"><img src="{% static "yanskie.jpg"%}" alt="Anggota 1"></div>
+                <div class="slide"><img src="{% static "ditri2.jpg"%}" alt="Anggota 2"></div>
+                <div class="slide"><img src="{% static "masbagus.jpg"%}" alt="Anggota 3"></div>
+            </div>
+        </div>
+    </div>
+
+        <div class="anggota-right">
+            <h1 class="anggota-title">KELOMPOK<br>15</h1>
+            <p class="anggota-sub">Praktikum Pemrograman Komputer 2025</p>
+            <blockquote class="anggota-quote">
+                "Setiap hari adalah kesempatan baru untuk tumbuh dan menjadi versi terbaik dari dirimu."<br>
+                <span>- Kelompok 15</span>
+            </blockquote>
+        </div>
+    </main>
+
+<section class="section" id="praktikum">
+    <h2>Modul Praktikum</h2>
+    <div class="hasil-grid">
+        <div class="hasil-item">
+            <img src="{% static "gambarpy.jpeg"%}" alt="Foto 1">
+            <h3>Modul 1</h3>
+            <a href="{% url 'modul:modul1' %}" class="btn-detail">Detail</a>
+        </div>
+
+        <div class="hasil-item">
+            <img src="{% static "gambargui.png"%}" alt="Foto 2">
+            <h3>Modul 2</h3>
+            <a href="{% url 'modul:modul2' %}" class="btn-detail">Detail</a>
+        </div>
+
+        <div class="hasil-item">
+            <img src="{% static "gambar3.png"%}" alt="Foto 3">
+            <h3>Modul 3</h3>
+            <a href="{% url 'modul:modul3' %}" class="btn-detail">Detail</a>
+        </div>
+
+        <div class="hasil-item">
+            <img src="{% static "gambarxampp.png"%}" alt="Foto 4">
+            <h3>Modul 4</h3>
+            <a href="{% url 'modul:modul4' %}" class="btn-detail">Detail</a>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="expert">
+    <h2>Hasil Praktikum</h2>
+    <div class="modul">
+        <img src="{% static "python.png"%}" alt="Modul 1" class="modul-img">
+        <div class="modul-info">
+        <h3><strong>Modul 1:</strong>Python Dasar</h3>
+        <p>Pada modul pertama yaitu Python dasar yang membahas tentang Python sebagai bahasa pemrograman 
+            yang mudah dipelajari, VSCode sebagai editor teks, flowchart untuk memvisualisasikan alur dari 
+            program yang dibuat, dan membuat program sederhana mengenai data perusahaan PT. Indomobil Multi 
+            Jasa Tbk.</p>
+        </div>
+    </div>
+
+    <div class="modul">
+        <img src="{% static "gui.png"%}" alt="Modul 2" class="modul-img">
+        <div class="modul-info">
+        <h3><strong>Modul 2:</strong>GUI (Grapichal User Interface)</h3>
+        <p>Pada modul kedua yaitu GUI (Graphical User Interface) yang membahas tentang pembuatan 
+        antarmuka grafis menggunakan PySide2 dan QtCharts, serta membuat laman penyewaan PT. Indomobil 
+        Multi Jasa Tbk mulai dari login, pemilihan truk, penyewaan, hingga cetak struk dan grafik 
+        penyewaan.</p>
+        </div>
+    </div>
+
+    <div class="modul">
+        <img src="{% static "statis.png"%}" alt="Modul 3" class="modul-img">
+        <div class="modul-info">
+        <h3><strong>Modul 3:</strong>Website Statis</h3>
+        <p>Pada modul ketiga yaitu website statis yang membahas tentang pembuatan halaman web 
+        menggunakan HTML dan framework Django. Website ini menampilkan informasi perusahaan PT. 
+        Indomobil Multi Jasa Tbk yaitu daftar unit truk, fitur pemesanan, dan evaluasi untuk layanan.</p>
+        </div>
+    </div>
+
+    <div class="modul">
+        <img src="{% static "dinamis.png"%}" alt="Modul 4" class="modul-img">
+        <div class="modul-info">
+        <h3><strong>Modul 4:</strong>Website Dinamis</h3>
+        <p>Pada modul keempat yaitu website dinamis yang membahas tentang penggunaan database, XAMPP, 
+            Apache, dan MySQL untuk menyimpan dan mengelola data pemesanan. Website ini menampilkan halaman 
+            tabel data, formulir pemesanan, dan profil perusahaan yang memungkinkan untuk interaksi dua arah 
+            antara pelanggan dan sistem, sehingga memudahkan dalam pengelolaan data.</p>
+        </div>
+    </div>
+</section>
+
+    <section class="section" id="kontak">
+        <h2 style="text-align: center;">Profil Kelompok</h2>
+        <div class="anggota-wrapper">
+            <div class="anggota-box">
+                <img src="{% static "ditri.jpg"%}" alt="Ditri" class="anggota-foto">
+                <h3>Ditri Okta Riawati</h3>
+                <p>D600240105</p>
+                <div class="sosial-media">
+                    <a href="https://www.instagram.com/ditriiaa?igsh=MTBleTE3aDhpa2QwYw==" target="_blank">Instagram</a> |
+                    <a href="https://wa.me/+6281229764049" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="anggota-box">
+                <img src="{% static "yan.jpg"%}" alt="Ryan" class="anggota-foto">
+                <h3>Ryan Ardhi Zulfahmi</h3>
+                <p>D600240184</p>
+                <div class="sosial-media">
+                    <a href="https://www.instagram.com/ryanardhi_?igsh=ZHA3cXhyZXV5bzI1" target="_blank">Instagram</a> |
+                    <a href="https://wa.me/+6208984240903" target="_blank">WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="saran">
+        <div class="contact-container">
+
+        <div class="contact-image">
+            <img src="{% static "ditri.jpg"%}" alt="Contact Photo">
+        </div>
+        <div class="form-wrapper">
+            <h1 class="contact-title">Kirimi Pesan</h1>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Nama Anda">
+                    <input type="email" placeholder="Email">
+                </div>
+                <textarea placeholder="Berikan Pesan Anda"></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+  <h1 class="footer-title">PROKOM 2025</h1>
+  <div class="footer-content">
+    <div class="footer-column">
+      <p><em>(Halaman)</em></p>
+      <p><a href="#">Home</a></p>
+      <p><a href="#expert">Hasil</a></p>
+      <p><a href="#kontak">Profil</a></p>
+      <p><a href="#saran">Saran</a></p>
+    </div>
+    <div class="footer-column">
+      <p><em>(Aktivitas)</em></p>
+      <p><a href="#praktikum">Praktikum</a></p>
+      <p><a href="#praktikum">Modul</a></p>
+    </div>
+    <div class="footer-column">
+      <p><em>(Halaman Utilitas)</em></p>
+      <p><a href="#404">404</a></p>
+    </div>
+    <div class="footer-column">
+      <p><em>(Sosial)</em></p>
+      <p><a href="https://instagram.com" target="_blank">Instagram</a></p>
+      <p><a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
+      <p><a href="https://youtube.com" target="_blank">YouTube</a></p>
+      <p><a href="#">Website</a></p>
+    </div>
+  </div>
+  <p style="text-align:center; margin-top: 30px;"><a href="#">Kembali ke home</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Dinamis</title>
+    <link rel="icon" href="{% static "prokom.png"%}">
+    <link rel="stylesheet" href="{% static "modul4.css"%}">
+</head>
+<header>
+    <a href="/">home</a>
+</header>
+<br><br>
+<body>
+    <div class="container">
+        <h1>Website Dinamis</h1>
+
+        <h2>Database</h2>
+        <p>Database adalah kumpulan data terstruktur yang disimpan secara terpadu dalam suatu sistem 
+          yang dapat diakses dan dikelola oleh pengguna atau aplikasi. Data yang disimpan dalam database 
+          biasanya terorganisir dalam tabel atau relasi, dan dapat diakses dan diubah dengan menggunakan 
+          bahasa query seperti SQL. Tujuan utama database adalah untuk menyimpan data secara terstruktur 
+          dan terpadu, sehingga data dapat diakses dan dimanipulasi dengan mudah dan efisien.</p>
+
+        <h2>Kelebihan dari database</h2>
+        <ul>
+            <li>Dapat meningkatkan data independance (kemandirian data).</li>
+            <li>Konsistensi data.</li>
+            <li>Meningkatkan aksesibilitas terhadap data dan respon yang lebih baik.</li>
+            <li>Pengendalian terhadap kerangkapan data.</li>
+            <li>Meningkatkan keamanan data.</li>
+        </ul>
+
+        <h2>Kekurangan dari database</h2>
+        <ul>
+            <li>Biaya yang tidak murah alias biayanya sangat mahal karena menyangkut biaya-biaya 
+              untuk pembelian sekaligus perawatan hardware and software.</li>
+            <li>Rumit.</li>
+            <li>Tambahan biaya konversi.</li>
+        </ul>
+
+        <h2>XAMPP</h2>
+        <p>XAMPP merupakan perangkat lunak bebas, yang mendukung banyak system operasi merupakan 
+          kompilasi dari beberapa program, XAMPP adalah perangkat yang menggabungkan tiga aplikasi 
+          ke dalam satu paket yaitu Apache MySQL, 6 dan phpMyAdmin dengan XAMPP pekerjaan anda sangat 
+          dimudahkan karena dapat menginstalasi dan mengkonfigurasi ketiga aplikasi tersebut sekaligus 
+          dan otomatis. XAMPP merupakan salah satu paket instalasi apache.php dan MySQL instan yang 
+          dapat kita gunakan untuk membantu proses instalasi ketiga tersebut selain paket instalasi 
+          instan XAMPP untuk berpindah versi juga memberikan fasilitasi pilihan penggunaan PHP.</p>
+
+        <h2>Apache</h2>
+        <p>Apache adalah paket aplikasi yang digunakan untuk web server yang handal dan stabil. 
+          Jika dibandingkan dengan web server lainnya, Apache masih menjadi andalan para webmaster. 
+          Perkembangan server ini sangat pesat sehingga hampir semua server web menggunakan Apache. 
+          Aplikasi ini dapat diunduh di http://www.apache.org. Aplikasi Apache dikenal dengan nama 
+          httpd. Jika menggunakan Linux Redhat/Fedora maka paket ini sudah ada dalam bentuk RPM, dan 
+          hanya melakukan instalasi saja tanpa harus melakukan konfigurasi yang cukup rumit.</p>
+
+        <h2>MySQL</h2>
+        <p>MySQL adalah Relational Database Management System (RDBMS) yang digunakan untuk mengolah 
+          data terstruktur. MySQL merupakan salah satu database yang paling banyak digunakan saat ini. 
+          Database merupakan elemen penting dalam aplikasi karena mampu menyimpan data. Data yang 
+          tersimpan dapat digunakan kembali untuk berbagai kepentingan seperti ditampilkan, diagregasi, 
+          diolah dan sebagainya. MySQL mampu menyimpan banyak database.</p>
+
+        <h2>Contoh SQL yang digunakan untuk mengelola database</h2>
+        <pre>
+CREATE DATABASE toko;
+USE toko;
+CREATE TABLE produk (
+    nama VARCHAR(50),
+    harga INT
+);
+INSERT INTO produk (nama, harga) VALUES ('Pensil', 3000);
+SELECT * FROM produk;
+        </pre>
+    </div>
+
+<footer class="footer">
+  <h1 class="footer-title">PROKOM 2025</h1>
+  <div class="footer-content">
+    <div class="footer-column">
+      <p><em>(Halaman)</em></p>
+      <p><a href="/">Home</a></p>
+      <p><a href="#expert">Hasil</a></p>
+      <p><a href="#kontak">Profil</a></p>
+      <p><a href="#saran">Saran</a></p>
+    </div>
+    <div class="footer-column">
+      <p><em>(Aktivitas)</em></p>
+      <p><a href="#praktikum">Praktikum</a></p>
+      <p><a href="#praktikum">Modul</a></p>
+    </div>
+    <div class="footer-column">
+      <p><em>(Halaman Utilitas)</em></p>
+      <p><a href="#404">404</a></p>
+    </div>
+    <div class="footer-column">
+      <p><em>(Sosial)</em></p>
+      <p><a href="https://instagram.com" target="_blank">Instagram</a></p>
+      <p><a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
+      <p><a href="https://youtube.com" target="_blank">YouTube</a></p>
+      <p><a href="/">Website</a></p>
+    </div>
+  </div>
+  <p style="text-align:center; margin-top: 30px;"><a href="/">Kembali ke home</a></p>
+</footer>
+</body>
+</html>

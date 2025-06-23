@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f0f;
+    color: #ffffff;
+}
+
+header {
+    background-color: #000000;
+    padding: 15px 30px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.1);
+    border-bottom: 2px solid #00bfff;
+    position: fixed;       
+    top: 0;                 
+    left: 0;
+    width: 100%;           
+    z-index: 999;           
+}
+
+header a {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+header a:hover {
+    color: #ffffff;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #00bfff;
+    text-align: center;
+    border-bottom: 2px solid #00bfff;
+    padding-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    border-left: 5px solid #00bfff;
+    padding-left: 12px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #cccccc;
+}
+
+ul {
+    padding-left: 25px;
+    font-size: 18px;
+    color: #dddddd;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+pre {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #00ffcc;
+    overflow-x: auto;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #444;
+}
+
+.footer {
+  background-color: white;
+  color: black;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-title {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  min-width: 150px;
+  margin: 20px;
+}
+
+.footer-column p {
+  margin: 8px 0;
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
